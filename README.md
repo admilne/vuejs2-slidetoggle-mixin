@@ -18,21 +18,21 @@ Register the mixin in any `.vue` component
 
 ###### Globally
 
-Register the mixin where you set up Vue. Commenly this would in `app.js` or `main.js` 
+Register the mixin where you set up Vue. Commenly this would in `app.js` or `main.js`
 
 ```
-import Vue from 'vue';
-import slideToggle from './mixins/slideToggle';
+import Vue from 'vue'
+import slideToggle from './mixins/slideToggle'
 
-Vue.mixin(slideToggle);
+Vue.mixin(slideToggle)
 ```
 
 
 ### How to use
 
 The slideToggle function takes in 2 parameters: 
-- `ref`: Has to contain the word *slide* and has to be unique 
-- `speed`: in milliseconds. If not speed is entered, default is 400
+- `ref`: Has to contain the word *slide* and has to be unique
+- `speed`: in milliseconds. Default is 400 if left empty
 ```
 slideToggle('slide1', 220)
 ```
