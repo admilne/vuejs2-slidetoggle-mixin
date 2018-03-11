@@ -37,6 +37,10 @@ export default {
             const el = this.$refs[k]
             const sk = this.s[k]
             
+            if (!s) {
+                s = 400
+            }
+            
             el.style.transition = 'height ' + s + 'ms ease-in-out'
             
             // Close / Open 
