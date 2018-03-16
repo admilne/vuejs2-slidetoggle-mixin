@@ -43,12 +43,14 @@ export default {
                 s = 400
             }
 
-            el.style.transition = 'height ' + s + 'ms ease-in-out'
+            el.style.transition = 'height ' + s + 'ms ease-in-out, padding ' + s + 'ms ease-in-out'
 
             // Close / Open 
             if (sk.open) {
                 sk.open = false
                 el.style.height = '0px'
+                el.style.paddingTop = '0px'
+                el.style.paddingBottom = '0px'
             } else {
                 sk.open = true
                 el.style.overflow = 'hidden'
