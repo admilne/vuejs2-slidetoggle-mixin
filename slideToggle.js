@@ -53,14 +53,7 @@ export default {
                 el.style.paddingBottom = '0px'
             } else {
                 sk.open = true
-                el.style.overflow = 'hidden'
-                el.style.display = 'block'
-                window.requestAnimationFrame(() => {
-                    el.style.height = '0px'
-                    window.requestAnimationFrame(() => {
-                        el.style.height = sk.initHeight + 'px'
-                    })
-                })
+                el.style.height = sk.initHeight + 'px'
             }
         }
     }
